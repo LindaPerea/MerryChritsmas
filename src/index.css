@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(25, 36, 245);
+  
+  
+  text-align: center;
+  
+}
+
+.boxtop {
+  height: 300px;
+  background-image: url("./assets/img/v1remove.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+}
+
+.box2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 200px;
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+}
+.picture img {
+  border-radius: 100px;
+  border: solid 2px rebeccapurple;
+}
+/* css typin */
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  color: #b70505;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+    
+
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(25, 36, 245);
+  border-left: 2px solid #b70505;
+  animation: typing 1.5s steps(12) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+
+  }
+}
+
