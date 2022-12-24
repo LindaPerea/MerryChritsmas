@@ -28,6 +28,7 @@ const App = () => {
     return (
         <>
             <div className="boxtop"></div>
+            <audio  src="./src/assets/arre.mp3" type="mpeg" controls autoPlay></audio>
             <div><h1>Queremos Desearte:</h1></div>
             <div className="box2">
                 <div>
